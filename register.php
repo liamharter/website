@@ -1,6 +1,6 @@
 <?php
-$login1 = $_POST['login'];
-$senha1 = MD5($_POST['senha']);;
+$login1 = $_GET['login'];
+$senha1 = MD5($_GET['senha']);;
 $connect = mysqli_connect('estoquesites.mysql.dbaas.com.br','estoquesites','Estoque@123');
 $db = mysqli_select_db($connect, 'estoquesites') or die(mysqli_error($connect));
 
